@@ -1,5 +1,5 @@
 {
-  "activePreset": "anthropic",
+  "activePreset": "opencode-go",
   "activeMode": "normal",
   "tierCaps": {
     "fast": 8,
@@ -210,6 +210,45 @@
           "Performance optimization"
         ]
       }
+    },
+    "opencode-go": {
+      "fast": {
+        "model": "opencode-go/deepseek-v4-flash",
+        "costRatio": 1,
+        "description": "DeepSeek V4 Flash for exploration, search, and simple reads",
+        "steps": 30,
+        "whenToUse": [
+          "Codebase exploration and search",
+          "Simple file reads and listing",
+          "Grep/glob operations",
+          "Quick lookups and research"
+        ]
+      },
+      "medium": {
+        "model": "opencode-go/deepseek-v4-pro",
+        "costRatio": 5,
+        "description": "DeepSeek V4 Pro for implementation, refactoring, and tests",
+        "steps": 50,
+        "whenToUse": [
+          "Feature implementation",
+          "Refactoring",
+          "Writing tests",
+          "Code review",
+          "Bug fixes"
+        ]
+      },
+      "heavy": {
+        "model": "opencode-go/kimi-k2.6",
+        "costRatio": 20,
+        "description": "Kimi K2.6 for architecture, complex debugging, and security",
+        "steps": 120,
+        "whenToUse": [
+          "Architecture decisions",
+          "Complex debugging (after 2+ failures)",
+          "Security review",
+          "Performance optimization"
+        ]
+      }
     }
   },
   "taskPatterns": {
@@ -314,6 +353,11 @@
         "openai",
         "anthropic",
         "github-copilot"
+      ],
+      "opencode-go": [
+        "openai",
+        "anthropic",
+        "google"
       ]
     }
   },
