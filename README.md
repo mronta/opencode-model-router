@@ -251,9 +251,9 @@ The plugin ships with four presets (switch with `/preset <name>`):
 **openai**:
 | Tier | Model | Cost ratio |
 |------|-------|-----------|
-| @fast | `openai/gpt-5.3-codex-spark` | 1x |
-| @medium | `openai/gpt-5.3-codex` | 5x |
-| @heavy | `openai/gpt-5.3-codex` (xhigh) | 20x |
+| @fast | `openai/gpt-5.4-mini` | 1x |
+| @medium | `openai/gpt-5.4` (high) | 5x |
+| @heavy | `openai/gpt-5.5` (xhigh) | 20x |
 
 **github-copilot**:
 | Tier | Model | Cost ratio |
